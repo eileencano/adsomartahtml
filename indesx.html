@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var ciudad =prompt("ingrese la ciudad");
+    var precio=prompt("ingrese la valor");
+
+if (ciudad == "mexico" || ciudad == "Mexico"||ciudad == "MEXICO") {
+  precio = precio - precio*0.05 
+  document.write("El destino a la ciudad  " +ciudad + " tiene un descuento del 5%  el valor es : " + precio +" pesos");
+
+} else if (ciudad =="madrid" ||ciudad =="Madrid" || ciudad =="MADRID") {
+  precio = precio - precio*0.10 
+  document.write("El destino a la ciudad  " +ciudad + " tiene un descuento del 10%  el valor es : " + precio);
+} else if (ciudad =="españa" ||ciudad =="España" || ciudad =="ESPAÑA") {
+  precio = precio - precio*0.20 
+  document.write("El destino a la ciudad  " +ciudad + " tiene un descuento del 20%  el valor es : " + precio);
+ } else if (ciudad =="londres" ||ciudad =="Londres" || ciudad =="LONDRES") {
+  precio = precio - precio*0.25 
+  document.write("El destino a la ciudad  " +ciudad + " tiene un descuento del 25%  el valor es : " + precio);
+}else {
+    document.write("no tiene descuento");
+}  
+</script>
+</body>
+</html>
